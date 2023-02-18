@@ -35,10 +35,11 @@ a {
     color: #f9faf8;
     background-color: #1f2937;
     display: flex;
+    justify-content: center;
 }
 
 .introduction-text {
-    flex: 1;
+    width: 500px;
 }
 
 .introduction-title {
@@ -48,19 +49,42 @@ a {
 
 .introduction-description {
     font-size: 18px;
-    width:400px;
+    
+}
+
+.introduction-image{
+    max-width:600px;
+    max-height:500px;
+    width:auto;
+    height:auto;
+    margin:20px 30px;
+}
+
+.information-container {
+    display: flex;
+    justify-content: center;
+}
+
+.information-content {
+    text-align: center;
 }
 
 .information-title {
     text-align: center;
 }
 
-.information-content {
-
+.information-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 25px;
+    border: 3px solid #3882F6;
+    padding: 0px;
+    margin: 10px 30px;
 }
 
 .quote {
-    padding: 100px;
+    padding: 100px 200px;
     background-color: #e5e7eb;
 }
 
@@ -76,8 +100,13 @@ a {
     font-size: 24px;
 }
 
-.call-to-action{
-    margin: 100px 500px;
+.call-to-action-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action-box{
     background-color: #3882F6;
     color: #f9faf8;
     display: flex;
@@ -86,14 +115,22 @@ a {
     padding: 20px;
     width: 1000px;
     height: 150px;
+    margin: 20px 0px;
+
+    justify-content: space-around;
+    align-items: center;
 }
 
 .call-to-action-text {
+    
 }
 
-.sign-up{
+.sign-up-button{
     background-color: #3882F6;
     color: #f9faf8;
+    border-radius: 25px;
+    border: 3px solid #f9faf8;
+    padding: 30px 50px;
 }
 
 .footer {
